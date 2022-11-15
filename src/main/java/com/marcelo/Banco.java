@@ -28,8 +28,8 @@ public class Banco {
 		((Conta) conta).saque(valor);
 	}
 	
-	static void transferirDinheiro(Double valor, Object conta) {
-		((Conta) conta).transferir(valor, conta);
+	static void transferirDinheiro(Double valor, Object fromConta, Object toConta) {
+		((Conta) fromConta).transferir(valor, toConta);
 	}
 	
 	static void emprestimoEspecial(Double valor, ContaPremium conta) {
